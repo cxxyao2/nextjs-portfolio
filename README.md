@@ -22,6 +22,10 @@
 - client-side && server-side redirect
 - security: authenticaiton , environment variables, bcypte
 
+## vscode extension
+
+- ES7+ React/Redux/React-Native snippet (shortcut: trfce create a function component)
+
 ## set environment variables
 
 - windows powershell: $env:NEXT_PUBLIC_BACKEND_URL='...'

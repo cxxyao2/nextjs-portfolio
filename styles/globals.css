@@ -2,19 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply antialiased;
-    @apply dark:bg-black dark:text-gray-100 bg-slate-200 text-slate-600;
-  }
-}
-
 @layer components {
-  .postbody-ulol {
-    @apply text-lg font-semibold my-5 mx-0 list-decimal list-inside;
+  .heroButton {
+    @apply px-6 py-2 border border-[#242424]  rounded-full  uppercase text-sm tracking-widest text-black
+    transition-all  hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
   }
 
-  .postbody-pre {
-    @apply py-5 my-5 mx-0 leading-8;
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all  focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40
+    hover:border-[#F7AB0A]/40;
   }
 }
+git remote add origin https://github.com/cxxyao2/my-portfolio.git
+git branch -M master
+git push -u origin master

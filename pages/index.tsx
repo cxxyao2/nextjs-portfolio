@@ -1,82 +1,82 @@
-import fs from 'fs'
-import path from 'path'
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import About from '../components/About'
+import ContactMe from '../components/ContactMe'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
+import WorkExperience from '../components/WorkExperience'
 
-import matter from 'gray-matter'
-import Post from '../components/post'
-import { sortByDate } from '../utils'
-import Paginator from '../components/paginator'
-import { useEffect, useState } from 'react'
-import Meta from '../components/meta'
-
-interface PostListProps {
-  posts: Array<any>
-}
-
-const Home = ({ posts }: PostListProps) => {
-  const [current, setCurrent] = useState(1)
-  const [itemNumber, setItemNumber] = useState(5)
-  const [displayedPosts, setDisplayedPosts] = useState(posts.slice(0, 5))
-
-  const handlePageChanged = (
-    currentPage: number,
-    itemNumberPerPage: number
-  ) => {
-    setCurrent(currentPage)
-    setItemNumber(itemNumberPerPage)
-  }
-
-  useEffect(() => {
-    setDisplayedPosts(
-      posts.slice((current - 1) * itemNumber, current * itemNumber)
-    )
-  }, [current, itemNumber, posts])
-
+const Home: NextPage = () => {
   return (
-    <>
-      <Meta
-        title='Activities'
-        keywords='activite marketing strategy'
-        description='gas service center'></Meta>
-      <Paginator
-        itemCount={posts?.length}
-        pageChanged={(currentPage, itemNumberPerPage) =>
-          handlePageChanged(currentPage, itemNumberPerPage)
-        }
-        className='mt-2'></Paginator>
-      <div className='grid grid-cols-1 gap-8  md:grid-cols-2 p-2 '>
-        {displayedPosts.map((post: { [key: string]: any }) => (
-          <Post
-            post={post}
-            key={post.frontmatter.date}></Post>
-        ))}
-      </div>
-    </>
+    <div
+      className=' text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80
+    '>
+      <Head>
+        <title> Jennifer Cheng's Portfolio</title>
+      </Head>
+
+      <section
+        id='hero'
+        className='snap-start'>
+        <Hero />
+      </section>
+
+      <section
+        id='about'
+        className='snap-center'>
+        <About />
+      </section>
+
+      <section
+        id='experience'
+        className='snap-center'>
+        <WorkExperience />
+      </section>
+
+      <section
+        id='skills'
+        className='snap-start'>
+        <Skills />
+      </section>
+
+      <section
+        id='projects'
+        className='snap-center'>
+        <Projects />
+      </section>
+
+      <section
+        id='contact'
+        className='snap-start'>
+        <ContactMe />
+      </section>
+
+      <Link href='#hero'>
+        <footer className='sticky bottom-5 w-full cursor-pointer'>
+          <div className='flex items-center justify-center'>
+            <img
+              src='avatar/duck.jpg'
+              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
+            />
+          </div>
+        </footer>
+      </Link>
+    </div>
   )
 }
 
 export default Home
 
 export const getStaticProps = async ({ locale = 'en' }) => {
-  const files = fs.readdirSync(path.join('posts'))
-
-  const posts = files.map((filename) => {
-    const slug = filename.replace(/.md$/, '')
-
-    const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
-      'utf-8'
-    )
-    const { data: frontmatter } = matter(markdownWithMeta)
-
-    return {
-      slug,
-      frontmatter
-    }
-  })
-
+  const posts = ['1', '2']
   return {
     props: {
-      posts: posts.sort(sortByDate)
+      posts
     }
   }
 }
