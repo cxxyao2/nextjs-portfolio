@@ -4,3 +4,4 @@
 - experiences
 - skills
 - projects
+- footer
