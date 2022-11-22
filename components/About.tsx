@@ -6,19 +6,16 @@ type Props = {}
 function About({}: Props) {
   return (
     <div className='h-screen flex  flex-col relative text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center'>
-      <h3 className='absolute top-24 uppercase tracking-[24px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-24 uppercase tracking-[24px] text-gray-800 text-2xl'>
         About
       </h3>
-      <div className='flex flex-col md:flex-row justify-around items-center'>
-        <motion.img
-          initial={{ opacity: 0, x: -200 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
+      <div className='absolute top-36 mx-auto flex flex-col md:flex-row justify-around items-center'>
+        <img
           src='avatar/myself.jpg'
-          className='rounded-full w-40 h-40 object-cover '></motion.img>
+          className='rounded-full w-40 h-40 object-cover '></img>
         <motion.div
           initial={{ opacity: 0, x: 200 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, x: 0 }}>
           <p className='text-base align-middle w-full p-2 md:w-2/3 md:p-5 first-line:uppercase '>
             Hi,there! My name is{' '}

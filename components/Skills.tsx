@@ -21,15 +21,16 @@ const skillSource = [
 const Skills = () => {
   return (
     <div className='h-screen flex relative flex-col text-center md:text-left xl:flex-row  max-w-7xl xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-800 text-2xl'>
         Skills
       </h3>
-      <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
+      <div className='absolute top-36 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
         {skillSource.map((source) => (
           <Skill source={source} />
         ))}
       </div>
-</div>
+      <div className="w-full absolute top-[40%] bg-indigo-600/10 left-0 h-1/2 -skew-y-12"></div>
+    </div>
   )
 }
 

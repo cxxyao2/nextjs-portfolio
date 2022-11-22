@@ -22,11 +22,11 @@ function Hero({}: Props) {
       <div className='relative h-[200px] w-4/5  overflow-hidden'>
         <img
           src='heros/keyboard.svg'
-          className=' absolute left-1/2 -translate-x-1/2 top-0   h-full filter-gray z-10'
+          className=' absolute left-1/2 -translate-x-1/2 top-0   h-full filter-gray z-10 select-none'
         />
         <img
           src='heros/women.svg'
-          className='absolute left-1/2 -translate-x-1/2 top-0    text-blue-500  h-full filter-gray z-20'
+          className='absolute left-1/2 -translate-x-1/2 top-0    text-blue-500  h-full filter-gray z-20 select-none'
         />
         <div className='absolute top-1/2 -translate-y-1/2  w-full bg-indigo-500 text-white h-[90px] md:h-[48px] z-30'>
           <h1 className='text-3xl lg:text-4xl font-semibold scroll-px-10'>
@@ -37,7 +37,7 @@ function Hero({}: Props) {
       </div>
 
       <>
-        <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
+        <h2 className='text-sm uppercase  text-gray-600 pb-2 tracking-[15px]'>
           Software Engineer
         </h2>
 
@@ -58,7 +58,7 @@ function Hero({}: Props) {
 
         <div className='flex justify-center items-center space-x-8'>
           <a
-          target="_blank"
+            target='_blank'
             href='https://www.linkedin.com/in/
             cheng-jennifer-xiaoxia'
             title='linkedin account'>
@@ -68,7 +68,7 @@ function Hero({}: Props) {
             />
           </a>
           <a
-           target="_blank"
+            target='_blank'
             href='https://www.github.com/cxxyao2'
             title='github account'>
             <SvgGithub
@@ -77,7 +77,7 @@ function Hero({}: Props) {
             />
           </a>
           <a
-           target="_blank"
+            target='_blank'
             href='https://twitter.com/Jennife82590867'
             title='twitter account'>
             <SvgTwitter

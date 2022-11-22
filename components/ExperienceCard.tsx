@@ -1,26 +1,21 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-type Props = {}
+type Props = {index:number}
 
-function ExperienceCard({}: Props) {
+function ExperienceCard({index}: Props) {
   return (
-    <div className='flex flex-col rounded-lg  items-center space-y-2 flex-shrink-0 w-[400px] md:w-[600px] xl:w-[900px]'>
-      <motion.img
-        initial={{
-          y: -80,
-          opacity: 0
-        }}
-        transition={{ duration: 1.2 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className='w-32 h-16 rounded-lg border border-gray-600 object-cover object-center '
-        src='works/ADNM.webp'
-        alt='ADNM inc.'></motion.img>
-
+    <motion.div
+      initial={{
+        opacity: 0
+      }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1 }}
+      className='flex flex-col rounded-lg  items-center space-y-2 flex-shrink-0'>
       <div className='px-0 md:px-8 '>
-
-        <p className='font-bold text-2xl mt-1'>Frontend Developer. Porject TAG </p>
+        <p className='font-bold text-xl mt-1'>
+         {index}&nbsp; Frontend Developer
+        </p>
         <div className='flex space-x-2 my-1'>
           <img
             className='h-8 w-8 rounded-full'
@@ -47,9 +42,7 @@ function ExperienceCard({}: Props) {
             src='skills/cypress-small.svg'
           />
         </div>
-        <p className='uppercase py-5 text-gray-800'>
-        Nov.2021 - July.2022
-        </p>
+        <p className='uppercase py-5 text-gray-800'>Nov.2021 - July.2022</p>
         <ul
           role='list'
           className='marker:text-indigo-400 list-disc pl-5 space-y-3 text-slate-500'>
@@ -59,11 +52,9 @@ function ExperienceCard({}: Props) {
           <li>4 Develop new features such as </li>
           <li>5 Develop new features such as </li>
           <li>6 Develop new features such as </li>
-
-
         </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

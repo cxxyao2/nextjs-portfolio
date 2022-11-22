@@ -27,7 +27,9 @@ const PostPage = ({
       </Link>
       <div className='my-2 py-2 px-2 rounded-xl shadow-md shadow-gray-400/50 dark:shadow-indigo-400/50 bg-white'>
         <h1 className='my-2 mx-0 font-semibold dark:text-white'>{name}</h1>
-        <div className='text-gray-600 mb-5  py-0.5'>Posted on {date}</div>
+        <div className='text-4xl font-semibold mb-5  py-0.5'>
+          Posted on {date}
+        </div>
         <div className='relative w-full'>
           <Image
             src={cover_image}
