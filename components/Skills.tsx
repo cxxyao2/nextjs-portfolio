@@ -2,47 +2,34 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import Skill from './Skill'
 import { GlobeAltIcon, UserIcon } from '@heroicons/react/24/solid'
-const skillArray = [GlobeAltIcon, UserIcon]
-const SkillList = [
-  Skill,
-  Skill,
-  Skill,
-  Skill,
-  Skill,
-  Skill,
-  Skill,
-  Skill,
-  Skill,
-  Skill
+
+const skillSource = [
+  'skills/angular-big.svg',
+  'skills/reactjs-big.svg',
+  'skills/nextjs-big.svg',
+  'skills/cypress-big.svg',
+  'skills/getbootstrap-big.svg',
+  'skills/graphql-big.svg',
+  'skills/javascript-big.svg',
+  'skills/typescriptlang-big.svg',
+  'skills/webpack-big.svg',
+  'skills/mongodb-big.svg',
+  'skills/mysql-big.svg',
+  'skills/oracle-big.svg'
 ]
 
 const Skills = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
-      className='h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'>
+    <div className='h-screen flex relative flex-col text-center md:text-left xl:flex-row  max-w-7xl xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'>
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
-        Skills{' '}
+        Skills
       </h3>
-
-      <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>
-        Hover over a skill for currency profiency
-      </h3>
-
-      <div className='grid grid-cols-4 gap-5'>
-        {SkillList.slice(0, SkillList.length / 2).map((skill) => (
-          <Skill />
+      <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
+        {skillSource.map((source) => (
+          <Skill source={source} />
         ))}
-        {SkillList.slice(SkillList.length / 2).map((skill) => (
-          <Skill directionLeft />
-        ))}
-        {/*  {skillArray.slice(0, 1).map((Ele, index) => (
-          <Ele  className="text-dark w-8 h-8 " key={index} />
-        ))} */}
       </div>
-    </motion.div>
+</div>
   )
 }
 

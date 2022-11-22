@@ -4,8 +4,8 @@
 
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border border-[#242424]  rounded-full  uppercase text-sm tracking-widest text-black
-    transition-all  hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
+    @apply px-6 py-2 outline-indigo-600  rounded-full  uppercase text-sm tracking-widest font-semibold
+    transition-all  hover:underline hover:underline-offset-8 hover:decoration-indigo-600 hover:text-indigo-600/40;
   }
 
   .contactInput {
@@ -13,6 +13,33 @@
     hover:border-[#F7AB0A]/40;
   }
 }
-git remote add origin https://github.com/cxxyao2/my-portfolio.git
-git branch -M master
-git push -u origin master
+
+.filter-gray {
+  filter: invert(23%) sepia(11%) saturate(301%) hue-rotate(349deg)
+    brightness(101%) contrast(93%);
+}
+
+.filter-blue {
+  filter: invert(49%) sepia(47%) saturate(4583%) hue-rotate(202deg)
+    brightness(97%) contrast(98%);
+}
+
+.filter-yellow {
+  filter: invert(61%) sepia(98%) saturate(426%) hue-rotate(358deg)
+    brightness(97%) contrast(100%);
+}
+
+.filter-red {
+  filter: invert(7%) sepia(45%) saturate(6873%) hue-rotate(325deg)
+    brightness(95%) contrast(97%);
+}
+
+.filter-purple {
+  filter: invert(73%) sepia(100%) saturate(1910%) hue-rotate(209deg)
+    brightness(101%) contrast(102%);
+}
+
+.filter-indigo {
+  filter: invert(35%) sepia(41%) saturate(2077%) hue-rotate(216deg)
+    brightness(107%) contrast(89%);
+}
