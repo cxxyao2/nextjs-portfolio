@@ -10,9 +10,12 @@ function About({}: Props) {
         About
       </h3>
       <div className='absolute top-36 mx-auto flex flex-col md:flex-row justify-around items-center'>
-        <img
+        <motion.img
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1, x: 0 }}
           src='avatar/myself.jpg'
-          className='rounded-full w-40 h-40 object-cover '></img>
+          className='rounded-full w-40 h-40 object-cover '></motion.img>
         <motion.div
           initial={{ opacity: 0, x: 200 }}
           transition={{ duration: 0.5 }}

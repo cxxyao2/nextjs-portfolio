@@ -1,11 +1,16 @@
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ExperienceCard from './ExperienceCard'
 
 type Props = {}
 
 function WorkExperience({}: Props) {
   const [index, setIndex] = useState(1)
+  useEffect(() => {
+    buttonRef.current?.focus()
+  }, [])
+
+  const buttonRef = useRef<HTMLButtonElement>(null)
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,7 +23,12 @@ function WorkExperience({}: Props) {
       <div className='absolute top-36 grid  grid-cols-1 md:grid-cols-[150px_1fr] gap-5 '>
         <div className=' flex flex-row gap-x-1 pt-100 md:flex-col justify-evenly items-center md:h-100'>
           <button
-            className='pl-2 border-l-2 border-gray-200 focus:border-[#F7AB0A]'
+            ref={buttonRef}
+            className={`pl-2 border-l-2 outline-none focus:border-indigo-600  ${
+              index === 1
+                ? '  outline-2 outline-indigo-600 rounded-lg'
+                : 'border-gray-200'
+            }`}
             onClick={() => setIndex(() => 1)}
             aria-label='adnm inc.'>
             <img
@@ -27,7 +37,11 @@ function WorkExperience({}: Props) {
             />
           </button>
           <button
-            className='pl-2 border-l-2 border-gray-200 focus:border-[#F7AB0A]'
+            className={`pl-2 border-l-2 outline-none  focus:border-indigo-600 ${
+              index === 2
+                ? '  outline-2 outline-indigo-600 rounded-lg'
+                : 'border-gray-200'
+            }`}
             onClick={() => setIndex(() => 2)}
             aria-label='youyou inc.'>
             <img
@@ -36,7 +50,11 @@ function WorkExperience({}: Props) {
             />
           </button>
           <button
-            className='pl-2 border-l-2 border-gray-200 focus:border-[#F7AB0A]'
+            className={`pl-2 border-l-2 outline-none focus:border-indigo-600 ${
+              index === 3
+                ? '  outline-2 outline-indigo-600 rounded-lg'
+                : 'border-gray-200'
+            }`}
             onClick={() => setIndex(() => 3)}
             aria-label='cits inc.'>
             <img
