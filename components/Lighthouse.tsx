@@ -72,7 +72,6 @@ const Lighthouse = ({pageIndex}:Props) => {
               Manual testing: navigate website using
               keyboard
             </li>
-            <li>Choose 3rd-party components carefully and add accessibility to it as needed </li>
             <li>...</li>
 
           </ul>
