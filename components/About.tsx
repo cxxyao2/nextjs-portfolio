@@ -9,7 +9,7 @@ function About({}: Props) {
       <h3 className=' absolute top-5 md:top-20  uppercase tracking-[24px] text-gray-800 text-2xl'>
         About
       </h3>
-      <div className='absolute top-22  md:top-36  p-2 mx-auto flex flex-col md:flex-row justify-around items-center gap-5 text-left'>
+      <div className='absolute top-26  md:top-36  p-2 mx-auto flex flex-col md:flex-row justify-around items-center gap-5 text-left'>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
