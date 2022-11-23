@@ -27,7 +27,9 @@ function ContactMe({}: Props) {
       </h3>
 
       <div className='absolute top-36 flex flex-col space-y-10 '>
-
+        <h4 className='text-xl font-semibold  text-center'>
+          Let's work together!
+        </h4>
         <div>
           <div className='flex items-center space-x-5 justify-center '>
             <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
