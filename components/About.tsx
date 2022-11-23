@@ -6,10 +6,10 @@ type Props = {}
 function About({}: Props) {
   return (
     <div className='h-screen flex relative flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
-      <h3 className=' absolute top-20 uppercase tracking-[24px] text-gray-800 text-2xl'>
+      <h3 className=' absolute top-5 md:top-20  uppercase tracking-[24px] text-gray-800 text-2xl'>
         About
       </h3>
-      <div className='absolute top-32 md:top-36 p-2 mx-auto flex flex-col md:flex-row justify-around items-center gap-5 text-left'>
+      <div className='absolute top-22  md:top-36  p-2 mx-auto flex flex-col md:flex-row justify-around items-center gap-5 text-left'>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
@@ -18,7 +18,8 @@ function About({}: Props) {
           after:rounded-md after:translate-x-[15px] after:translate-y-[-15px] after:z-[-2]
           '>
           <img
-            src='avatar/myself.jpg' alt=""
+            src='avatar/myself.jpg'
+            alt=''
             className='rounded-full  md:border-2 md:border-indigo-600/40 w-40 h-40 object-cover md:rounded-md'></img>
         </motion.div>
 
@@ -28,7 +29,8 @@ function About({}: Props) {
           whileInView={{ opacity: 1, x: 0 }}
           className='block md:hidden relative'>
           <img
-            src='avatar/myself.jpg' alt=""
+            src='avatar/myself.jpg'
+            alt=''
             className='rounded-full  md:border-2 md:border-indigo-600/40 w-40 h-40 object-cover md:rounded-md'></img>
         </motion.div>
 
@@ -47,8 +49,11 @@ function About({}: Props) {
               contribute to my teams by my abilites and experiences.
             </div>
             <br />
-            <div>Nowadays, I am developing web apps with Angular, React and Next.js.
-            I always have passion for Typescript, Javascript and databases.</div>
+            <div>
+              Nowadays, I am developing web apps with Angular, React and
+              Next.js. I always have passion for Typescript, Javascript and
+              databases.
+            </div>
             <br />
             In the past, I have also worked as ERP/CRP techinical consultant,
             software engineer and project manager.

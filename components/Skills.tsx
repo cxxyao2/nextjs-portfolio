@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 import { CodeBracketIcon, RocketLaunchIcon } from '@heroicons/react/24/solid'
@@ -6,11 +5,11 @@ import { CodeBracketIcon, RocketLaunchIcon } from '@heroicons/react/24/solid'
 const Skills = () => {
   return (
     <div className='h-screen flex relative flex-col text-lef  xl:flex-row  max-w-7xl xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'>
-      <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-800 text-2xl'>
+      <h3 className='absolute top-5 md:top-20  uppercase tracking-[20px] text-gray-800 text-2xl'>
         Skills(1)
       </h3>
 
-      <div className='absolute top-36 grid grid-cols-2  gap-8'>
+      <div className='absolute top-22 md:top-36  grid grid-cols-2  gap-8'>
         <div>
           <div>
             <h4 className=' text-xl font-semibold text-center pb-2'>

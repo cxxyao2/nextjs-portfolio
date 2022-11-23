@@ -20,7 +20,7 @@ function Projects({}: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className='h-screen relative  flex flex-col overflow-hidden  max-w-full justify-evenly items-center mx-auto  z-0'>
-      <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-600 text-2xl  text-center'>
+      <h3 className='absolute top-5 md:top-20  uppercase tracking-[20px] text-gray-600 text-2xl  text-center'>
         Projects
       </h3>
       <div

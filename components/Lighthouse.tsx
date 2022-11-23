@@ -8,14 +8,14 @@ import React from 'react'
 const Lighthouse = () => {
   return (
     <div className='h-screen flex relative flex-col text-lef  xl:flex-row  max-w-full xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'>
-      <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-800 text-2xl'>
+      <h3 className='absolute top-5 md:top-20  uppercase tracking-[20px] text-gray-800 text-2xl'>
         Skills(2)
       </h3>
-      <h4 className='absolute top-10 text-slate-400 text-center w-full'>
+      <h4 className='absolute top-16 text-slate-400 text-center w-full'>
         Performance and Accessibility
       </h4>
 
-      <div className='absolute top-36 grid grid-cols-2 gap-6 p-2'>
+      <div className='absolute top-22 md:top-36  grid grid-cols-2 gap-6 p-2'>
         <div className='relative -top-4 flex flex-col justify-start items-center'>
           <img
             src='lighthouses/light3.png'
