@@ -6,7 +6,7 @@ import Image from 'next/image'
 const ProjectReact = () => {
   return (
     <div
-      className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 md:space-y-15 items-center pt-36
+      className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 md:space-y-15 items-center pt-32
      px-5 h-screen '>
       <motion.div
         initial={{ y: -200, opacity: 0 }}
@@ -25,6 +25,23 @@ const ProjectReact = () => {
           className='absolute rounded-sm'
           alt=''
         />
+         <a
+          className='absolute bottom-0 left-0'
+            title='Deployed Url'
+            href='https://react-english-notes.vercel.app/'
+            target='_blank'
+            rel='noreferrer'>
+            <RocketLaunchIcon className='inline-block w-8 h-8 text-indigo-600 border-2 rounded-full border-yellow-600 shadow-lg shadow-yellow-600/50 animate-bounce' />
+          </a>
+          <a
+            className='absolute bottom-0 right-0'
+            title='Code hosted'
+            href='https://github.com/cxxyao2/react-english-notes'
+            target='_blank'
+            rel='noreferrer'>
+            <CodeBracketIcon className='inline-block w-8 h-8 text
+            -indigo-600 border-2 rounded-full border-yellow-600 shadow-lg shadow-yellow-600/50 animate-bounce' />
+          </a>
       </motion.div>
 
       <div className='space-y-2 px-0 md:px-10  max-w-6xl'>
@@ -36,7 +53,7 @@ const ProjectReact = () => {
         </ul>
 
         <h4 className='text-xl font-semibold  text-center'>
-          Vocabulary helper&nbsp;(&nbsp;Case 3/4)
+          (3/4)&nbsp;Vocabulary helper
         </h4>
 
         <ul className='text-base list-disc list-inside text-left'>
@@ -47,16 +64,7 @@ const ProjectReact = () => {
           <li>Recommand english words automatically</li>
         </ul>
 
-        <div className='flex flex-row my-4 space-x-4  items-start'>
-          <a title='Deployed Url' href="https://react-english-notes.vercel.app/"  target='_blank'
-            rel='noreferrer'>
-            <RocketLaunchIcon className='inline-block w-6 h-6 text-indigo-600' />
-          </a>
-          <a title='Code hosted' href="https://github.com/cxxyao2/react-english-notes"  target='_blank'
-            rel='noreferrer'>
-            <CodeBracketIcon className='inline-block w-6 h-6 text-indigo-600' />
-          </a>
-        </div>
+
       </div>
     </div>
   )

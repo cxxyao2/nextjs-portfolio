@@ -28,26 +28,38 @@ const Home: NextPage = () => {
 
       <section
         id='about'
-        className='snap-start'>
-        <About />
+        className='snap-center'>
+        <About pageIndex={1} />
+      </section>
+
+      <section
+        id='about'
+        className='snap-center md:hidden'>
+        <About pageIndex={2} />
       </section>
 
       <section
         id='experience'
-        className='snap-start'>
+        className='snap-center'>
         <WorkExperience />
       </section>
 
       <section
         id='skills'
-        className='snap-start'>
+        className='snap-center'>
         <Skills />
       </section>
 
       <section
         id='skillsAdded'
-        className='snap-start'>
-        <Lighthouse />
+        className='snap-center'>
+        <Lighthouse pageIndex={2} />
+      </section>
+
+      <section
+        id='skillsAdded'
+        className='block md:hidden snap-center'>
+        <Lighthouse pageIndex={3} />
       </section>
 
       <section

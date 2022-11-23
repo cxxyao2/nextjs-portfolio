@@ -39,7 +39,7 @@ function ExperienceCardYon({ index }: Props) {
           className='marker:text-indigo-400 list-disc pl-5 space-y-3 text-slate-800'>
           <li>
             {' '}
-            Participate in creating and implementing large-scale ERP system
+            Participate in creating and executing ERP system
             plans
           </li>
           <li>
@@ -47,7 +47,7 @@ function ExperienceCardYon({ index }: Props) {
             Help users well adapt to financial policy changes by configuring
             reports on BI platform
           </li>
-          <li> Train users and new employees in best practices </li>
+          <li> Train users and new employees in best practices to improve customer services </li>
           <li>
             {' '}
             Responsible for ongoing support, including performance and new

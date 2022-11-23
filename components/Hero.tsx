@@ -7,6 +7,7 @@ import Link from 'next/link'
 import SvgLinkedin from './SvgLinked'
 import SvgGithub from './SvgGithub'
 import SvgTwitter from './SvgTwitter'
+import { ArrowDownTrayIcon } from '@heroicons/react/24/solid'
 
 type Props = {}
 
@@ -20,11 +21,13 @@ function Hero({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <div className='relative h-[200px] w-4/5  overflow-hidden'>
-        <img alt=""
+        <img
+          alt=''
           src='heros/keyboard.svg'
           className=' absolute left-1/2 -translate-x-1/2 top-0   h-full filter-gray z-10 select-none'
         />
-        <img alt=""
+        <img
+          alt=''
           src='heros/women.svg'
           className='absolute left-1/2 -translate-x-1/2 top-0    text-blue-500  h-full filter-gray z-20 select-none'
         />
@@ -56,7 +59,7 @@ function Hero({}: Props) {
           </Link>
         </div>
 
-        <div className='flex justify-center items-center space-x-8'>
+        <div className='flex justify-center items-center space-x-2 md:space-x-8'>
           <a
             target='_blank'
             rel='noreferrer'
@@ -87,6 +90,15 @@ function Hero({}: Props) {
               className='w-8 h-8 '
               fill='#6366F1'
             />
+          </a>
+          <a
+            href='avatar/myself.jpg'
+            download={'JenniferCheng.pdf'}>
+            <ArrowDownTrayIcon
+              className='inline-block w-8 h-8 '
+              fill='#6366F1'
+            />
+            Resume
           </a>
         </div>
       </>

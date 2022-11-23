@@ -50,8 +50,9 @@ function ExperienceCardCanon({ index }: Props) {
           className='marker:text-indigo-400 list-disc pl-5 space-y-3 text-slate-800'>
           <li>
             {' '}
-            Deliver high quality custom softwares with .net, Java, Oracle,
-            SqlServer etc
+            Deliver high quality custom softwares for users in multiple
+            industries Help users to make flexible production plans, timely
+            collect production data, reduct material cost, manage e-commence shop orders and stock etc.
           </li>
           <li>
             {' '}

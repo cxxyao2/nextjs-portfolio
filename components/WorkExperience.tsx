@@ -4,14 +4,10 @@ import ExperienceCardAdnm from './ExperienceCardAdnm'
 import ExperienceCardCanon from './ExperienceCardCanon'
 import ExperienceCardYon from './ExperienceCardYon'
 
-// TODO
 type Props = {}
 
 function WorkExperience({}: Props) {
   const [index, setIndex] = useState(1)
-  useEffect(() => {
-    buttonRef.current?.focus()
-  }, [])
 
   const buttonRef = useRef<HTMLButtonElement>(null)
   return (
@@ -23,7 +19,7 @@ function WorkExperience({}: Props) {
       <h3 className='absolute top-5 md:top-20  uppercase tracking-[15px] text-gray-800 text-2xl text-center'>
         Work Experience
       </h3>
-      <div className='absolute top-26 md:top-36  grid  grid-cols-1 md:grid-cols-[150px_1fr] gap-4 max-w-5xl'>
+      <div className='absolute top-36  grid  grid-cols-1 md:grid-cols-[150px_1fr] gap-2 md:gap-4 max-w-3xl'>
         <div className=' flex flex-row gap-x-1 pt-8  md:flex-col justify-evenly items-center'>
           <button
             ref={buttonRef}
