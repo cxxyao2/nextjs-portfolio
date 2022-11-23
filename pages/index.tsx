@@ -9,6 +9,7 @@ import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
+import Lighthouse from '../components/Lighthouse'
 
 const Home: NextPage = () => {
   return (
@@ -27,13 +28,13 @@ const Home: NextPage = () => {
 
       <section
         id='about'
-        className='snap-center'>
+        className='snap-start'>
         <About />
       </section>
 
       <section
         id='experience'
-        className='snap-center'>
+        className='snap-start'>
         <WorkExperience />
       </section>
 
@@ -44,8 +45,14 @@ const Home: NextPage = () => {
       </section>
 
       <section
+        id='skillsAdded'
+        className='snap-start'>
+        <Lighthouse />
+      </section>
+
+      <section
         id='projects'
-        className='snap-center'>
+        className='snap-start'>
         <Projects />
       </section>
 

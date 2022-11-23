@@ -3,7 +3,7 @@ import React from 'react'
 
 type Props = {index:number}
 
-function ExperienceCard({index}: Props) {
+function ExperienceCardAdnm({index}: Props) {
   return (
     <motion.div
       initial={{
@@ -12,9 +12,9 @@ function ExperienceCard({index}: Props) {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       className='flex flex-col rounded-lg  items-center space-y-2 flex-shrink-0'>
-      <div className='px-0 md:px-8 '>
+      <div className='px-2 md:px-8 '>
         <p className='font-bold text-xl mt-1'>
-         {index}&nbsp; Frontend Developer
+         Frontend Developer
         </p>
         <div className='flex space-x-2 my-1'>
           <img
@@ -42,20 +42,19 @@ function ExperienceCard({index}: Props) {
             src='skills/cypress-small.svg'
           />
         </div>
-        <p className='uppercase py-5 text-gray-800'>Nov.2021 - July.2022</p>
+        <p className='uppercase py-3 text-gray-800'>Nov.2021 - July.2022</p>
         <ul
           role='list'
-          className='marker:text-indigo-400 list-disc pl-5 space-y-3 text-slate-500'>
-          <li>1 Add state manage with ngXS, </li>
-          <li>2 TroubleShoot </li>
-          <li>3 Develop new features such as </li>
-          <li>4 Develop new features such as </li>
-          <li>5 Develop new features such as </li>
-          <li>6 Develop new features such as </li>
+          className='marker:text-indigo-400 list-disc pl-5 space-y-3 text-slate-800'>
+          <li> Help release the new version on time. Add state management(NGXS) to 20% components(The total: 150+)</li>
+          <li> TroubleShoot errors maily related to asynchronous processing and responsive UI </li>
+          <li> Optimize performance cooperating with backend developers </li>
+          <li> Contribute to system test and documentation  </li>
+          <li> Develop new features designed by global teams </li>
         </ul>
       </div>
     </motion.div>
   )
 }
 
-export default ExperienceCard
+export default ExperienceCardAdnm

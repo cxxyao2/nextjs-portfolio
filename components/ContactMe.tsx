@@ -22,20 +22,16 @@ function ContactMe({}: Props) {
 
   return (
     <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-      <h3 className='absolute top-24 uppercase tracking-[20px]  text-gray-600 text-2xl'>
+      <h3 className='absolute top-20 uppercase tracking-[20px]  text-gray-600 text-2xl'>
         Contact
       </h3>
 
       <div className='absolute top-36 flex flex-col space-y-10 '>
-        <h4 className='text-2xl font-semibold text-center'>
-
-          <span className='decoration-[#F7AB0A]/50 underline'>Get In Touch</span>
-        </h4>
 
         <div>
           <div className='flex items-center space-x-5 justify-center '>
             <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>+13817762781</p>
+            <p className='text-xl'>+13817762781</p>
           </div>
 
           <div className='flex items-center space-x-5 justify-center '>
@@ -44,7 +40,7 @@ function ContactMe({}: Props) {
               href='mailto:jenniferyao1996@hotmail.com'
               className='focus:underline focus:underline-offset-4  focus:decoration-indigo-600'>
               {' '}
-              <p className='text-2xl '>Jenniferyao1996@hotmail.com</p>
+              <p className='text-xl '>Jenniferyao1996@hotmail.com</p>
             </a>
           </div>
         </div>
