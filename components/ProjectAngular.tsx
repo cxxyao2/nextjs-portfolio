@@ -50,12 +50,14 @@ const ProjectAngular = () => {
         </ul>
 
         <div className='flex flex-row my-4 space-x-4  items-start'>
-          <button aria-label='Deployed Url'>
+          <a title='Deployed Url' href="https://ng-report.vercel.app/home"  target='_blank'
+            rel='noreferrer'>
             <RocketLaunchIcon className='inline-block w-6 h-6 text-indigo-600' />
-          </button>
-          <button aria-label='Code hosted'>
+          </a>
+          <a title='Code hosted' href="https://github.com/cxxyao2/ng-report"  target='_blank'
+            rel='noreferrer'>
             <CodeBracketIcon className='inline-block w-6 h-6 text-indigo-600' />
-          </button>
+          </a>
         </div>
       </div>
     </div>

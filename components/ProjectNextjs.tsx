@@ -28,7 +28,7 @@ const ProjectNextjs = () => {
       </motion.div>
 
       <div className='space-y-2 px-0 md:px-10  max-w-6xl'>
-        <ul className=' flex flex-row flex-wrap gap-x-2 text-xs font-bold'>
+        <ul className=' flex flex-row flex-wrap gap-x-2 text-xs font-bold  justify-center items-center'>
           <li>Next.js</li>
           <li>React</li>
           <li>MongoDB</li>
@@ -52,12 +52,18 @@ const ProjectNextjs = () => {
         </ul>
 
         <div className='flex flex-row my-4 space-x-4  items-start'>
-          <button aria-label='Deployed Url'>
+          <a
+            title='Deployed Url'
+            href='https://nextjs-minierm-jennifer.vercel.app/'  target='_blank'
+            rel='noreferrer'>
             <RocketLaunchIcon className='inline-block w-6 h-6 text-indigo-600' />
-          </button>
-          <button aria-label='Code hosted'>
+          </a>
+          <a
+            title='Code hosted'
+            href='https://github.com/cxxyao2/nextjs-posts'  target='_blank'
+            rel='noreferrer'>
             <CodeBracketIcon className='inline-block w-6 h-6 text-indigo-600' />
-          </button>
+          </a>
         </div>
       </div>
     </div>
