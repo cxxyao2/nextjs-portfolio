@@ -19,25 +19,25 @@ function ExperienceCardAdnm({index}: Props) {
         <div className='flex space-x-2 my-1'>
           <img
             className='h-8 w-8 rounded-full'
-            src='skills/angular-small.svg'
+            src='skills/angular-small.svg' alt=""
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full'
             src='skills/getbootstrap-small.svg'
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full'
             src='skills/typescriptlang-small.svg'
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full border-2 border-teal-700'
             src='skills/swagger_logo.svg'
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full border-2 border-gray-500'
             src='skills/ngxs.svg'
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full border-2 border-gray-500'
             src='skills/cypress-small.svg'
           />

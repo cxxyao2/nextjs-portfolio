@@ -15,19 +15,19 @@ function ExperienceCardYon({ index }: Props) {
       <div className='px-2 md:px-8 '>
         <p className='font-bold text-xl mt-1'>Technical Consultant</p>
         <div className='flex space-x-2 my-1'>
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full'
             src='skills/java.svg'
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full'
             src='skills/oracle-small.svg'
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full'
             src='skills/googlemaps-small.svg'
           />
-          <img
+          <img alt=""
             className='h-8 w-8 rounded-full filter-blue'
             src='skills/project.svg'
           />

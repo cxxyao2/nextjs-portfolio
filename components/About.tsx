@@ -18,7 +18,7 @@ function About({}: Props) {
           after:rounded-md after:translate-x-[15px] after:translate-y-[-15px] after:z-[-2]
           '>
           <img
-            src='avatar/myself.jpg'
+            src='avatar/myself.jpg' alt=""
             className='rounded-full  md:border-2 md:border-indigo-600/40 w-40 h-40 object-cover md:rounded-md'></img>
         </motion.div>
 
@@ -28,7 +28,7 @@ function About({}: Props) {
           whileInView={{ opacity: 1, x: 0 }}
           className='block md:hidden relative'>
           <img
-            src='avatar/myself.jpg'
+            src='avatar/myself.jpg' alt=""
             className='rounded-full  md:border-2 md:border-indigo-600/40 w-40 h-40 object-cover md:rounded-md'></img>
         </motion.div>
 

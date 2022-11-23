@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       className=' text-gray-800 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
-        <title> Jennifer Cheng's Portfolio</title>
+        <title> Jennifer Cheng&apos;s Portfolio</title>
       </Head>
 
       <section

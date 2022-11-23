@@ -20,11 +20,11 @@ function Hero({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <div className='relative h-[200px] w-4/5  overflow-hidden'>
-        <img
+        <img alt=""
           src='heros/keyboard.svg'
           className=' absolute left-1/2 -translate-x-1/2 top-0   h-full filter-gray z-10 select-none'
         />
-        <img
+        <img alt=""
           src='heros/women.svg'
           className='absolute left-1/2 -translate-x-1/2 top-0    text-blue-500  h-full filter-gray z-20 select-none'
         />
@@ -59,6 +59,7 @@ function Hero({}: Props) {
         <div className='flex justify-center items-center space-x-8'>
           <a
             target='_blank'
+            rel='noreferrer'
             href='https://www.linkedin.com/in/
             cheng-jennifer-xiaoxia'
             title='linkedin account'>
@@ -69,6 +70,7 @@ function Hero({}: Props) {
           </a>
           <a
             target='_blank'
+            rel='noreferrer'
             href='https://www.github.com/cxxyao2'
             title='github account'>
             <SvgGithub
@@ -78,6 +80,7 @@ function Hero({}: Props) {
           </a>
           <a
             target='_blank'
+            rel='noreferrer'
             href='https://twitter.com/Jennife82590867'
             title='twitter account'>
             <SvgTwitter

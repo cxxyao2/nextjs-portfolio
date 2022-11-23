@@ -35,6 +35,7 @@ function WorkExperience({}: Props) {
             onClick={() => setIndex(() => 1)}
             aria-label='adnm inc.'>
             <img
+              alt=''
               src='works/ADNM.webp'
               className='w-20 h-12 rounded-lg'
             />
@@ -48,6 +49,7 @@ function WorkExperience({}: Props) {
             onClick={() => setIndex(() => 2)}
             aria-label='youyou inc.'>
             <img
+              alt=''
               src='works/yy.jpg'
               className='w-20 h-12 rounded-lg px-2 py-3'
             />
@@ -61,6 +63,7 @@ function WorkExperience({}: Props) {
             onClick={() => setIndex(() => 3)}
             aria-label='cits inc.'>
             <img
+              alt=''
               src='works/CITS.jpg'
               className='w-20 h-12 rounded-lg'
             />

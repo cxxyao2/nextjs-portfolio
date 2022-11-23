@@ -28,7 +28,7 @@ function ContactMe({}: Props) {
 
       <div className='absolute top-36 flex flex-col space-y-10 '>
         <h4 className='text-xl font-semibold  text-center'>
-          Let's work together!
+          Let&apos;s work together!
         </h4>
         <div>
           <div className='flex items-center space-x-5 justify-center '>
@@ -50,6 +50,7 @@ function ContactMe({}: Props) {
         <div className='flex justify-center items-center space-x-8'>
           <a
             target='_blank'
+            rel='noreferrer'
             href='https://www.linkedin.com/in/
             cheng-jennifer-xiaoxia'
             title='linkedin account'>
@@ -60,6 +61,7 @@ function ContactMe({}: Props) {
           </a>
           <a
             target='_blank'
+            rel='noreferrer'
             href='https://www.github.com/cxxyao2'
             title='github account'>
             <SvgGithub
@@ -69,6 +71,7 @@ function ContactMe({}: Props) {
           </a>
           <a
             target='_blank'
+            rel='noreferrer'
             href='https://twitter.com/Jennife82590867'
             title='twitter account'>
             <SvgTwitter
