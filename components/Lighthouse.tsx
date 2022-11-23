@@ -56,7 +56,7 @@ const Lighthouse = () => {
           </ul>
         </div>
       </div>
-      <div className='relative -bottom-6 text-slate-800 font-semibold text-2xl'>
+      <div className='absolute bottom-20 text-slate-800 font-semibold text-2xl'>
         Keep learning, keep evolving!{' '}
       </div>
     </div>

@@ -23,6 +23,7 @@ const ProjectReact = () => {
           layout='fill'
           objectFit='cover'
           className='absolute rounded-sm'
+          alt=''
         />
       </motion.div>
 

@@ -23,6 +23,7 @@ const ProjectPHP = () => {
           layout='fill'
           objectFit='cover'
           className='absolute rounded-sm'
+          alt=''
         />
       </motion.div>
 
@@ -41,9 +42,10 @@ const ProjectPHP = () => {
         </h4>
 
         <ul className='text-base list-disc list-inside text-left'>
+          <li>*** Code part of backend and frontend ***</li>
           <li>Backend using PHP.&nbsp;Front using React</li>
           <li>Log in and log out authentication with email</li>
-          <li> User can create works and post comments </li>
+          <li>User can create works and post comments </li>
         </ul>
 
         <div className='flex flex-row my-4 space-x-4  items-start'>

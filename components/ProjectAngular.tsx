@@ -22,7 +22,7 @@ const ProjectAngular = () => {
           src='/programs/app-angular.png'
           layout='fill'
           objectFit='cover'
-          className='absolute rounded-sm'
+          className='absolute rounded-sm' alt=""
         />
       </motion.div>
 
