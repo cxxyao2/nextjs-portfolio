@@ -9,7 +9,7 @@ const Skills = () => {
         Skills(1)
       </h3>
 
-      <div className='absolute top-22 md:top-36  grid grid-cols-2  gap-8'>
+      <div className='absolute top-28  grid grid-cols-2  gap-8'>
         <div>
           <div>
             <h4 className=' text-xl font-semibold text-center pb-2'>

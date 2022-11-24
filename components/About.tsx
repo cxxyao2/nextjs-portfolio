@@ -11,7 +11,7 @@ function About({ pageIndex }: Props) {
       <h3 className=' absolute top-5 md:top-20  uppercase tracking-[24px] text-gray-800 text-2xl'>
         About
       </h3>
-      <div className='absolute top-36  pb-2 px-5 mx-auto flex flex-col md:flex-row justify-around items-center gap-5 text-left'>
+      <div className='absolute top-28  pb-2 px-5 mx-auto flex flex-col md:flex-row justify-around items-center gap-5 text-left'>
         {pageIndex < 2 && (
           <motion.div
             initial={{ opacity: 0, x: -100 }}
