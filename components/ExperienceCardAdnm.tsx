@@ -46,8 +46,8 @@ function ExperienceCardAdnm({index}: Props) {
         <ul
           role='list'
           className='marker:text-indigo-400 list-disc pl-5 space-y-3 text-slate-800'>
-          <li> Help release the new version on time. Add state management(NGXS) to 20% components(The total: 150+)</li>
-          <li> TroubleShoot errors maily related to asynchronous processing and responsive UI </li>
+          <li> Help release the new version on time. Add state management(NGXS) to 20% components(Total: 150+)</li>
+          <li> Troubleshoot errors maily related to asynchronous processing and responsive UI </li>
           <li> Optimize performance cooperating with backend developers </li>
           <li> Contribute to system test and documentation  </li>
           <li> Develop new features designed by global teams </li>

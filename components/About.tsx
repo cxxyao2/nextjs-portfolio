@@ -24,21 +24,23 @@ function About({ pageIndex }: Props) {
               src='avatar/myself.jpg'
               alt=''
               className='rounded-full  md:border-2 md:border-indigo-600/40 w-40 h-40 object-cover md:rounded-md'></img>
-          </motion.div>)}
+          </motion.div>
+        )}
 
-          {pageIndex < 2 && (
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          className='block md:hidden relative'>
-          <img
-            src='avatar/myself.jpg'
-            alt=''
-            className='rounded-full  md:border-2 md:border-indigo-600/40 w-40 h-40 object-cover md:rounded-md'></img>
-        </motion.div>)}
+        {pageIndex < 2 && (
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className='block md:hidden relative'>
+            <img
+              src='avatar/myself.jpg'
+              alt=''
+              className='rounded-full  md:border-2 md:border-indigo-600/40 w-40 h-40 object-cover md:rounded-md'></img>
+          </motion.div>
+        )}
 
-        <div className='text-base w-full max-w-3xl  pb-2 md:p-5 overflow-hidden'>
+        <div className='relative text-base w-full max-w-3xl  pb-2 md:p-5 overflow-hidden'>
           {pageIndex < 2 && (
             <motion.div
               initial={{ opacity: 0, x: 200 }}
