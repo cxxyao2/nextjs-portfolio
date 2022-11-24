@@ -48,8 +48,8 @@ function ExperienceCardYon({ index }: Props) {
           </li>
           <li>
             {' '}
-            Train users and new employees in best practices to utilize ERP to
-            its fullest capacity{' '}
+            Train users and new employees in best practice to utilize ERP to its
+            fullest capacity{' '}
           </li>
           <li>
             {' '}
@@ -58,7 +58,7 @@ function ExperienceCardYon({ index }: Props) {
           </li>
           <li>
             Help salespersons increase lead, accelerate orders, manage accounts
-            receivable and accocommission{' '}
+            receivable and commission{' '}
           </li>
           <li>
             {' '}

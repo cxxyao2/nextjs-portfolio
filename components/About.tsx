@@ -57,18 +57,23 @@ function About({ pageIndex }: Props) {
                 knowledge and experiences.
               </div>
               <br />
-              <div>
-                Nowadays, I am developing applications with Angular, React and
-                Next.js. I always have passion for Typescript, Javascript and
-                databases.
-              </div>
+
               <br />
             </motion.div>
           )}
-          <motion.div
+          <motion.div className='hidden md:block'
             initial={{ opacity: 0, x: 200 }}
             transition={{ duration: 0.5 }}
             whileInView={{ opacity: 1, x: 0 }}>
+            <div
+              className='
+  first-letter:text-7xl first-letter:font-bold first-letter:text-indigo-800
+  first-letter:mr-3 first-letter:float-left'>
+              Nowadays, I am developing applications with Angular, React and
+              Next.js. I always have passion for Typescript, Javascript and
+              databases.
+            </div>
+            <br />
             <div>
               In the past, I have as well worked as ERP/CRP techinical
               consultant, software engineer and project manager.&nbsp;After
@@ -88,6 +93,38 @@ function About({ pageIndex }: Props) {
               company some time. Now I am open to new opportunities.
             </div>
           </motion.div>
+          {pageIndex === 2 && <motion.div
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ duration: 0.5 }}
+            whileInView={{ opacity: 1, x: 0 }}>
+            <div
+              className='
+  first-letter:text-7xl first-letter:font-bold first-letter:text-indigo-800
+  first-letter:mr-3 first-letter:float-left'>
+              Nowadays, I am developing applications with Angular, React and
+              Next.js. I always have passion for Typescript, Javascript and
+              databases.
+            </div>
+            <br />
+            <div>
+              In the past, I have as well worked as ERP/CRP techinical
+              consultant, software engineer and project manager.&nbsp;After
+              immigrating to Canada, I took a pause in my career to take care of
+              my family.
+            </div>
+            <br />
+            <div>
+              {' '}
+              During that period, I kept learning. I took quality online courses
+              to advance frontend and backend knowledge and applied it to my
+              volunteer and personal projects.{' '}
+            </div>
+            <br />
+            <div>
+              Last year I wend back to career and worked for a Montreal software
+              company some time. Now I am open to new opportunities.
+            </div>
+          </motion.div>}
         </div>
       </div>
     </div>

@@ -92,7 +92,7 @@ function Hero({}: Props) {
             />
           </a>
           <a
-            href='avatar/myself.jpg'
+            href='works/chengResume.pdf'
             download={'JenniferCheng.pdf'}>
             <ArrowDownTrayIcon
               className='inline-block w-8 h-8 '

@@ -100,14 +100,7 @@ const Skills = () => {
                 </a>
               </li>
               <li>Oracle</li>
-              <li>
-                <a
-                  className='cursor-pointer hover:underline hover:decoration-solid underline-offset-8 decoration-indigo-600'
-                  href='https://github.com/cxxyao2/graphql_mongo1'>
-                  GraphQL
-                  <CodeBracketIcon className='inline-block w-6 h-6 text-indigo-600' />
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
@@ -142,6 +135,14 @@ const Skills = () => {
                 <RocketLaunchIcon className='inline-block w-6 h-6 text-indigo-600' />
               </a>
             </li>
+            <li>
+                <a
+                  className='cursor-pointer hover:underline hover:decoration-solid underline-offset-8 decoration-indigo-600'
+                  href='https://github.com/cxxyao2/graphql_mongo1'>
+                  GraphQL
+                  <CodeBracketIcon className='inline-block w-6 h-6 text-indigo-600' />
+                </a>
+              </li>
             <li>
               <a
                 className='cursor-pointer hover:underline hover:decoration-solid underline-offset-8 decoration-indigo-600'
