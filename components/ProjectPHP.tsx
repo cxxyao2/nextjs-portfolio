@@ -58,9 +58,9 @@ const ProjectPHP = () => {
 
         <ul className='text-base list-disc list-inside text-left'>
           <li>*** Code part of backend and frontend ***</li>
-          <li>Backend using PHP.&nbsp;Front using React</li>
+          <li>Backend using PHP.&nbsp;Frontend using React</li>
           <li>Log in and log out authentication with email</li>
-          <li>User can create works and post comments </li>
+          <li>User can create articles and post comments </li>
         </ul>
 
 
